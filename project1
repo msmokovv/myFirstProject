@@ -1,0 +1,152 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Project1</title>
+		<style>
+		body {
+				background-attachment: foxed;
+				background-position: center;
+				background-size: cover;
+				background-image: url("bg_tree.jpg");
+		}
+		#main{
+				margin: auto; 
+				margin-right: auto;
+				text-align: center;
+				width: 90%;
+				background-color: white;
+				margin-left: auto;
+				margin-right: auto;
+				opacity: 0.9;
+				}
+		.stylee {
+				width: 120px;
+				height: 60px;
+		}
+		.stylee:hover {
+				color: white;
+				opacity:0.9;
+				background-color: lightblue;
+				text-align: center;
+		}
+		#tablee {
+				width: 100%;
+				height: 100%;
+				border collapse:collapse;
+		}
+		#sss 	{
+		    background-image: url("menubtn.png"); 
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                background-repeat: no-repeat;
+                padding: 10px;
+                margin-left: 150px;
+                background-size: auto;
+				margin-left: auto;
+				margin-right: auto;
+				}
+		.center {
+				margin: auto;
+				width: 60%;
+				border: 1px;
+				padding: 10px;
+				text-align: center;
+		}
+		</style>
+	</head>
+	<body>
+		 <div id="main">
+			<table id="tablee" >
+				<tr>
+					<td width="33%" heigt="33%">
+				<div class="center">
+					<img src="TrumpColors.png" alt="picture1" /><br />
+				</div>
+					<h1 div class="center"><i>Project-FE1</i></h1>
+				<div class="center">
+			<input class="stylee" type="button" onclick="changeSpatiq()" value="Спатия" />
+			<input class="stylee" type="button" onclick="alert('Няма снимка');" value="Каро" />
+			<input class="stylee" type="button" onclick="chancheImageKupa()" value="Купа" />
+			<input class="stylee" type="button" onclick="chancheImagePika()" value="Пика" />
+			<input class="stylee" type="button" onclick="chancheImageBezKoz()" value="Без коз" />
+			<input class="stylee" type="button" onclick="chancheImageVsickoKoz()" value="Всичко коз" />
+				</div>
+					<div style="height:60%">
+			<fieldset height="300">
+				<legend>Форма за регистрации</legend>
+						<form action="http://enevsoft.net/echo.php" id="myForm" method="POST">
+						<table border="1px" >
+							<tr>
+								<td>
+					<img style="widht: center;"src="bg.jpg" alt="picture2" style="margin: auto;" id="smqna" width="245" height="300"><br />
+								</td>
+								<td width="150">
+						<label for="nameBox">
+							Вашето име: <input id="nameBox" type="text" name="myName"  placeholder="Въведете трите си имена" size="30"/>
+						</label><br />
+							Титла:
+							<input id="sexM" type="radio" name="sex" value="male" />
+						<label for="sexM">Г-н</label>
+							<input id="secret" type="radio" name="sex" value="secret" checked="checked" />
+						<label for="secret">Г-жа</label>
+							<input id="sexF" type="radio" name="sex" value="female" />
+						<label for="sexF">Г-ца</label><br />
+						<label for="date">Рожден ден:
+							<input id="date" type="date" name="date_of_birth"  />
+						</label><br />
+									<span>
+								<label for="city">Роден град :</label>
+								<select id="city" onchange="addItem()">
+									<option value="">София</option>
+									<option value="">Пловдив</option>
+									<option value="">Варна</option>
+									<option id="" value="" >Бургас</option>
+								</select>
+									</span><br />
+								<label for="Uchastnici">Брой участници<input type="text" id="ucha" value=""></label>
+								<label for="Masi">Брой игрални маси<input type="text" id="masi" value=""></label><br />
+							Съобщение до организаторите:
+							<textarea name="longText" placeholder="Моля, напишете ни нещо интересно,за себе си !" rows="10" cols="100"></textarea><br />
+								<input type="reset" value="Изчисти" />
+								<input type="submit" style="float:right" value="Изпрати" />
+						</form>
+				</fieldset>
+					</div>
+								</td>
+								<td>
+					<img src="04.jpg" alt="picture2" width="245" height="300"/><br />
+								</td>
+					</table>
+								</td>
+							</tr>
+			</table>
+		<script>
+		function changeSpatiq(){
+			var card = document.getElementById('smqna')
+			card.src = '01.jpg'
+			}
+		
+		function chancheImageKupa(){
+			var card = document.getElementById('smqna')
+			card.src = 'kupa.jpg'
+			}
+			
+		function chancheImagePika(){
+			var card = document.getElementById('smqna')
+			card.src = 'pika.png'
+			}
+			
+		function chancheImageBezKoz(){
+			var card = document.getElementById('smqna')
+			card.src = 'bk.jpeg'
+			}
+		
+		function chancheImageVsickoKoz(){
+			var card = document.getElementById('smqna')
+			card.src = 'vk.jpg'
+			}
+		</script>
+		</div>
+	</body>
+</html>
